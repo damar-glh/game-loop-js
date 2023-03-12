@@ -1,21 +1,21 @@
-let maximum = parseInt(prompt('Masukan nilai maksimal!'));
+let maximum = parseInt(prompt('Enter the maximum value!'));
 while(!maximum){
-    maximum = parseInt(prompt('Masukan nilai maksimal!'));
+    maximum = parseInt(prompt('Enter the maximum value!'));
 }
 
 const targetNum = Math.floor(Math.random() * maximum) + 1;
 console.log(targetNum);
 
-let gues = parseInt(prompt('Isi tebakan pertamamu!'));
+let gues = parseInt(prompt('Fill in your first guess!'));
 let attempts = 1;
 
 while( parseInt(gues) !== targetNum){
     attempts++;
     if (gues > targetNum){
-        gues = prompt('Terlalu tinggi! tebak lagi : ');
+        gues = prompt('Too high! guess again:');
     } else{
-        gues = prompt('Terlalu rendah! Tebak lagi : ');
+        gues = prompt('Too low! Guess again :');
     }
 }
 
-alert(`Selamat tebakan anda benar!! , Dengan percobaan sebanyak ${attempts} kali`);
+alert(`Congratulations, you guessed right!! , With as many trials ${attempts} time`);
