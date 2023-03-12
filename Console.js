@@ -5,3 +5,6 @@ while(!maximum){
 
 const targetNum = Math.floor(Math.random() * maximum) + 1;
 console.log(targetNum);
+
+let gues = parseInt(prompt('Isi tebakan pertamamu!'));
+let attempts = 1;
