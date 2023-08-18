@@ -35,7 +35,7 @@ let currentPlayer = 'X';
       board = ['', '', '', '', '', '', '', '', ''];
       document.getElementById('message').textContent = '';
       const cells = document.getElementsByClassName('cell');
-      for (let i of cells.length) {
-        cells[i].textContent = '';
+      for (const cell of cells) {
+        cell.textContent = '';
       }
     }
